@@ -20,10 +20,9 @@ export function List() {
     }, []);
 
     return (
-      <View>
+      <View style={{ flex: 1, backgroundColor: 'white'}}>
         {/* Headers */}
-        <View>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', flex: 1}}>List Screen </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold'}}>List Screen </Text>
          
             <FlatList 
                 data={data}
@@ -34,7 +33,6 @@ export function List() {
                     </View>
                 )}
                 />
-        </View>
         <Bar />
     </View>
   )

@@ -3,13 +3,14 @@ import { View, Text } from "react-native";
 import Bar from "../components/Bar";
 
 export function Profile() { 
-    <View style={{ flex: 1 }}>
+    return (
+         <View style={{ flex: 1 }}>
         {/* profile heading page */}
         <View>
-            <View>Circle</View>
-            <View>Name</View>
-            <View>Occupation</View>
-            <View>Tags</View>
+            <Text>Circle</Text>
+            <Text>Name</Text>
+            <Text>Occupation</Text>
+            <Text>Tags</Text>
         </View>
         {/* Projects/Posts */}
         <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
@@ -28,4 +29,5 @@ export function Profile() {
         </View>
         <Bar />
     </View>
+    )
 }
