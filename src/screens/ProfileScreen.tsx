@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Text, ScrollView } from "react-native";
 import Bar from "../components/Bar";
+import { Linking } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 export function Profile() {
   return (
@@ -31,7 +33,7 @@ export function Profile() {
             fontWeight: 'bold', 
             color: 'white' 
             }}>
-                Your Name
+                femnixx
             </Text>
           <Text style={{ 
             fontSize: 14, 
@@ -40,20 +42,22 @@ export function Profile() {
             textAlign: 'center', 
             paddingHorizontal: 20 
         }}>
-            Mobile Developer | Writer | Content Creator
+            Mobile Developer | Full Stack Web Developer | Software Engineer
           </Text>
 
         <View style={{ 
             flexDirection: 'row', 
             gap: 8, 
-            marginTop: 12 
+            marginTop: 12,
+            flexWrap: 'wrap',
+            justifyContent: 'center'
         }}>
-            {['React Native', 'TypeScript'].map(tag => (
+            {['React Native', 'TypeScript', 'JacaScript', 'Flutter', 'Kotlin'].map(tag => (
               <View key={tag} style={{ 
                 backgroundColor: 'rgba(255,255,255,0.2)', 
                 borderRadius: 20, 
                 paddingHorizontal: 12, 
-                paddingVertical: 4 
+                paddingVertical: 4,
             }}>
                 <Text style={{ 
                     color: 'white', 
@@ -80,15 +84,19 @@ export function Profile() {
                 fontWeight: 'bold', 
                 color: '#1a1a1a' 
             }}>
-                12
+               Github
             </Text>
-            <Text style={{ 
-                fontSize: 12, 
-                color: '#888', 
-                marginTop: 2 
-            }}>
-                Posts
-            </Text>
+           
+                 <TouchableOpacity onPress={() => Linking.openURL('https://github.com/femnixx')}>
+                    <Text style={{
+                        fontSize: 12, 
+                        color: '#663399',
+                        marginTop: 2,
+                        textDecorationLine: "underline"
+                    }}>
+                        Open Link
+                    </Text>
+                </TouchableOpacity>
           </View>
           <View style={{ 
             width: 1, 
@@ -99,7 +107,7 @@ export function Profile() {
                 fontWeight: 'bold', 
                 color: '#1a1a1a' 
             }}>
-                4
+                25
             </Text>
             <Text style={{ 
                 fontSize: 12, 
@@ -129,7 +137,8 @@ export function Profile() {
             color: '#555', 
             lineHeight: 22 
             }}>
-                Mobile Development Proving Grounds
+                An Undergraduate student in University of Brawijaya majoring in Information Systems. 
+                Loves to think about how tech works and implements them. 2-3 years of full-stack and mobile experience. 
             </Text>
         </View>
 
@@ -152,7 +161,7 @@ export function Profile() {
             flexWrap: 'wrap', 
             gap: 8
              }}>
-            {['React Native', 'TypeScript', 'JavaScript', 'REST APIs'].map(skill => (
+            {['React Native', 'TypeScript', 'JavaScript', 'REST APIs', 'Flutter', 'SQL', 'CI/CD'].map(skill => (
               <View key={skill} style={{ 
                 backgroundColor: '#e8f5ff', 
                 borderRadius: 20, 
