@@ -137,7 +137,7 @@ export function Profile() {
             color: '#555', 
             lineHeight: 22 
             }}>
-                An Undergraduate student in University of Brawijaya majoring in Information Systems. 
+                My name is Surya Pradipta, an Undergraduate student in University of Brawijaya majoring in Information Systems. 
                 Loves to think about how tech works and implements them. 2-3 years of full-stack and mobile experience. 
             </Text>
         </View>
