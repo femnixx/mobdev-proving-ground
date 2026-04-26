@@ -15,11 +15,13 @@ import {
 import { List } from './src/screens/ListScreen';
 import { Profile } from './src/screens/ProfileScreen';
 import PostDetail from './src/screens/PostDetail';
+import UserProfile from './src/screens/UserProfile';
 
 export type RootStackParamList = { 
         List: undefined;
         Profile: undefined;
         PostDetail: { id: number };
+        UserProfile: { userId: number };
     }
 
 const Stack = createNativeStackNavigator();
@@ -33,6 +35,7 @@ function App() {
           <Stack.Screen name="List" component={List} />
           <Stack.Screen name="Profile" component={Profile} />
           <Stack.Screen name="PostDetail" component={PostDetail} />
+          <Stack.Screen name='UserProfile' component={UserProfile}/>
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
